@@ -37,3 +37,12 @@ body {
     border-radius: 5px;
     color: darkcyan;
 }
+.body .h1 {
+  font-style:italic ;
+}
+.p {
+    color: aquamarine;
+}
+.button {
+    color: aqua;
+}
