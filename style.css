@@ -1,48 +1,162 @@
+/* General Styles */
 body {
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
     background-color: rgb(192, 254, 255);
+    color: rgb(42, 151, 170);
 }
+
+/* Navbar Styles */
 .navbar {
-    justify-content: space-around;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px 20px;
+    padding: 15px 20px;
     background-color: aqua;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .navbar .logo {
     display: flex;
     align-items: center;
 }
+
 .navbar .logo img {
-    width:70px;
-    margin-right: 10px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+    margin-right: 10px;
 }
+
 .navbar .logo span {
-    color: rgb(226, 43, 223);
     font-size: 20px;
-    font-weight: 500;
+    font-weight: bold;
+    color: rgb(226, 43, 223);
 }
+
 .navbar .menu {
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
+
 .navbar .menu a {
-    color: rgb(42, 151, 170);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
+    color: rgb(42, 151, 170);
+    padding: 5px 10px;
+    transition: background 0.3s, color 0.3s;
 }
+
 .navbar .menu a:hover {
     background-color: blueviolet;
     border-radius: 5px;
     color: darkcyan;
 }
-.body .h1 {
-  font-style:italic ;
+
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: rgb(192, 254, 255);
+    text-align: center;
 }
-.p {
-    color: aquamarine;
+
+.hero .text-content {
+    flex: 1;
+    padding: 20px;
 }
-.button {
+
+.hero .text-content h1 {
+    font-size: 36px;
+    color: rgb(226, 43, 223);
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero .text-content p {
+    font-size: 18px;
+    color: rgb(42, 151, 170);
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(128, 128, 240);
     color: aqua;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: blueviolet;
+    color: darkcyan;
+    transform: translateY(-3px);
+}
+
+.hero .image-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.hero .image-content img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero .text-content, .hero .image-content {
+        flex: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
