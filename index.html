@@ -1,15 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Final Project</title>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+        
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" 
+              integrity="sha512-RRXchD/VXxYdkHF4Y5V/him2dC0nmJ0ZrCq3/OD22jG4DWt2gI16mEvcL4UqKy/LePPTAdDkK0X0twOS7ipU1Q==" 
+              crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        
+        <!-- Custom CSS -->
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header class="navbar"> 
-            <div class ="logo">
-                <img src="cybersecurity.jpg" height="40" width="40">
+            <div class="logo">
+                <img src="cybersecurity.jpg" height="40" width="40" alt="Cybersecurity Logo">
                 <span>Cybersecurity</span>
             </div>
             <nav class="menu">
@@ -18,53 +31,113 @@
                 <a href="#">Get Started</a>
                 <a href="#">Contact Us</a>
             </nav>
-         </header>
-         <section class="hero">
+        </header>
+
+        <section class="hero">
             <div class="text-content">
-         <p>Cyber Security is the technique of protecting your systems, digital devices, networks, 
-            and all of the data stored in the devices from cyber attacks.</p>
-            <div class="buttons">
-                <button>Join us</button>
-                <button>Programmes</button>
+                <p>Cyber Security is the technique of protecting your systems, digital devices, networks, 
+                   and all of the data stored in the devices from cyber attacks.</p>
+                <div class="buttons">
+                    <button>Join us</button>
+                    <button>Programmes</button>
                 </div>
-            </div> 
-            <div class="image-content">
-            <img src="cyber 1.jpg">
             </div>
-            </section>
-            <div class="container d-flex justify-content-center align-items-center"
-        style="height: 100vh;">
-     <div class="card" style="width: 18rem; border-radius: 15px;">
-        <div class="card-body">
-            <img src="picture 1.jpg" style="border-radius: 150px;">
-            <h5 class="card-title">Strong Attention to Detail</h5>
-            <p class="card-text">Most, if not all, cybersecurity roles 
-                involve fine-tooth combing and paying attention to the specifics of a project, 
-                so having strong attention to detail is another characteristic cybersecurity professionals should possess.</p>
-         </div>
-    </div>
-</div>
-<div class="container d-flex justify-content-center align-items-center"
-        style="height: 100vh;">
-     <div class="card" style="width: 18rem; border-radius: 15px;">
-        <div class="card-body">
-            <img src="cyber 3.jpg" style="border-radius: 150px;">
-            <h5 class="card-title">Understanding scammers' tactics.</h5>
-            <p class="card-text">Expel's report found that scammers use a combination of three strategies to get people to interact with their emails;
-                 Imitating legitimate business activities, Creating a sense of urgency, Prompting the recipient to act.</p>
-         </div>
-    </div>
-</div>
-<div class="container d-flex justify-content-center align-items-center"
-        style="height: 100vh;">
-     <div class="card" style="width: 18rem; border-radius: 15px;">
-        <div class="card-body">
-            <img src="picture 2.jpg" style="border-radius: 150px;">
-            <h5 class="card-title">Shield your Data.</h5>
-            <p class="card-text"> Using complex passwords and multi-factor authentication adds a layer of security, as well as
-                encrypting data which makes sure that only authorized parties can access the information, even if it is intercepted.</p>
-         </div>
-    </div>
-</div>
+            <div class="image-content">
+                <img src="cyber 1.jpg" alt="Cybersecurity Banner">
+            </div>
+        </section>
+
+        <div class="content">
+            <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+                <div class="card" style="width: 18rem; border-radius: 15px;">
+                    <div class="card-body">
+                        <img src="picture 1.jpg" style="border-radius: 150px;" alt="Strong Attention to Detail">
+                        <h5 class="card-title">Strong Attention to Detail</h5>
+                        <p class="card-text">Most, if not all, cybersecurity roles 
+                           involve fine-tooth combing and paying attention to the specifics of a project, 
+                           so having strong attention to detail is another characteristic cybersecurity professionals should possess.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+                <div class="card" style="width: rem; border-radius: 20px;">
+                    <div class="card-body">
+                        <img src="cyber 3.jpg" style="border-radius: 500px;" alt="Understanding scammers' tactics">
+                        <h5 class="card-title">Understanding Scammers' Tactics</h5>
+                        <p class="card-text">Expel's report found that scammers use a combination of three strategies to get people to interact with their emails:
+                            Imitating legitimate business activities, Creating a sense of urgency, Prompting the recipient to act.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+                <div class="card" style="width: 18rem; border-radius: 15px;">
+                    <div class="card-body">
+                        <img src="picture 2.jpg" style="border-radius: 150px;" alt="Shield Your Data">
+                        <h5 class="card-title">Shield Your Data</h5>
+                        <p class="card-text">Using complex passwords and multi-factor authentication adds a layer of security. Encrypting data ensures that only authorized parties can access the information, even if it is intercepted.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div id="social-media" class="container-fluid bg-primary">
+                <div class="container text-white py-5">
+                    <h4 class="text-warning">Social Media</h4>
+                    <h1 class="m-heading">Let's be friends!</h1>
+                    <div class="row pt-5">
+                        <!-- LinkedIn -->
+                        <div class="col-3 media_link btn">
+                            <div class="row">
+                                <div class="col-6 d-flex justify-content-start">
+                                    <h3 class="m-0 pt-2 text-white">LinkedIn</h3>
+                                </div>
+                                <div class="col-6 d-flex justify-content-end align-items-center">
+                                    <i class="fab fa-linkedin-in fa-2x text-secondary"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cat -->
+                        <div class="col-3 media_link btn">
+                            <div class="row">
+                                <div class="col-6 d-flex justify-content-start">
+                                    <h3 class="m-0 pt-2 text-white">Cat</h3>
+                                </div>
+                                <div class="col-6 d-flex justify-content-end align-items-center">
+                                    <i class="fas fa-cat fa-2x text-secondary"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Envelope -->
+                        <div class="col-3 media_link btn">
+                            <div class="row">
+                                <div class="col-6 d-flex justify-content-start">
+                                    <h3 class="m-0 pt-2 text-white">Envelope</h3>
+                                </div>
+                                <div class="col-6 d-flex justify-content-end align-items-center">
+                                    <i class="fas fa-envelope fa-2x text-secondary"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bible -->
+                        <div class="col-3 media_link btn">
+                            <div class="row">
+                                <div class="col-6 d-flex justify-content-start">
+                                    <h3 class="m-0 pt-2 text-white">Bible</h3>
+                                </div>
+                                <div class="col-6 d-flex justify-content-end align-items-center">
+                                    <i class="fas fa-book-bible fa-2x text-secondary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
