@@ -160,3 +160,7 @@ button:hover {
         gap: 10px;
     }
 }
+.content {
+    display: flex;
+    justify-content: space-around;
+}
